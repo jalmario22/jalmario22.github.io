@@ -1,30 +1,84 @@
 <html>
     <head>
         <script src="https://kit.fontawesome.com/ecb9698fc3.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
         <title>Joshua Almario - Portfolio</title>
-        <ul> 
-            <li><a class="active" href="#overview">Overview</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-        </ul>
+        <script src="components.js" defer></script>
     </head>
     <body>
-        <h1 class="fade-in move-up"> Joshua Almario</h1>
+        <div id="header"></div>
 
-        <h2 class="fade-in-slower"> Unity Game Developer</h2>
+        <div class="full-page-div">
+            <h1 class="fade-in move-up"> Joshua Almario</h1>
 
-        <p class="fade-in-slowest">I am a Unity game developer and current EECS undergraduate at UC Berkeley. I keep collaboration at the core of development, demonstrated through my developed games across various interdisciplinary teams. I serve as an educator through my role as lead facilitator for the Game Design and Development DeCal, the one and only game design class at Cal.</p>
+            <!-- <h2 class="fade-in-slower"> Software/Game Developer</h2> -->
 
-        <div class="game">This is a game. 
-        <a href="https://theonlycool1.itch.io/half-wits-colosseum">Half Wits' Colosseum</a>
+            <p class="fade-in-slower" style="padding-left: 5%; padding-right: 5%">
+                I am an EECS undergraduate, game developer, and educator at UC Berkeley. I work with interdisciplinary teams of all sizes and skillsets within projects of many different frameworks, exercising key skills of collaboration and adaptability.
+            </p>
+        </div>
+        <h1 id="projects"> Featured Projects </h1>
+        <div style="justify-content: center;">
+        <div class="game">
+            <div class="content-side">
+                <div class="game">
+                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                        <img src="halfwits_thumbnail.png" />
+                    </a>
+                    <div class="tag" style="background-color: blueviolet;">Godot</div>
+                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
+                    <div class="tag" style="background-color: blueviolet;">Developer </div>
+                </div>
+            </div>
+            <div class="text-side">
+                <div class="game-title"> Koal-Bolds </div> 
+                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> 
+                <div class="game-context"> GMTK Game Jam 2026</div> 
+                <div class="game-info"> testing <br>
+                    did one <br>
+                    did two
+                    </div>
+            </div>
         </div>
 
+        <div class="game">
+            <div class="content-side">
+                <div class="game fade-in-slowest">
+                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                        <img src="halfwits_thumbnail.png" />
+                    </a>
+                    <div class="tag" style="background-color: blueviolet;">Godot</div>
+                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
+                    <div class="tag" style="background-color: blueviolet;">Developer </div>
+                </div>
+            </div>
+            <div class="text-side">
+                <div class="game-title"> Koal-Bolds </div> 
+                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> <br>
+                <div class="game-context"> GMTK Game Jam 2026</div> <br>
+            </div>
+        </div>
 
-        <span style="font-size: 3em; color: black; padding: 0px;" class="fade-in-slowest">
-        <i class="fa-brands fa-itch-io"></i> itch
-        <i class="fa-brands fa-square-linkedin"></i>  
-        </span>
-
+        <div class="game" id:"home">
+            <div class="content-side">
+                <div class="game fade-in-slowest">
+                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                        <img src="halfwits_thumbnail.png" />
+                    </a>
+                    <div class="tag" style="background-color: blueviolet;">Godot</div>
+                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
+                    <div class="tag" style="background-color: blueviolet;">Developer </div>
+                </div>
+            </div>
+            <div class="text-side">
+                <div class="game-title"> Koal-Bolds </div> 
+                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> <br>
+                <div class="game-context"> GMTK Game Jam 2026</div> <br>
+            </div>
+        </div>
+        </div>
+        <div id="footer"></div>
     </body>
 </html>
