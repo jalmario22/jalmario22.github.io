@@ -1,5 +1,9 @@
 html { scroll-behavior: smooth; }
 
+@view-transition {
+  navigation: auto;
+}
+
 .move-up {
 	transform: translateX(2);
 	transition: all .75s ease;
