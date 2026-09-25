@@ -10,10 +10,10 @@
     </head>
     <body>
         <header class="topnav" id="pageHeader">
-            <a href="/">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="games.html">Games</a>
-            <a href="work.html">Work</a>
+            <a href="#about">Joshua Almario</a>
+            <a href="#projects">Projects</a>
+            <a href="#games">Games</a>
+            <!-- <a href="work.html">Work</a> -->
 
             <span style="margin-left:auto; font-size: 2em; color: black; display: flex; justify-content:center;">
                 <a href="https://very-spook.itch.io/">
@@ -26,7 +26,7 @@
             
 </header>
 
-        <div class="full-page-div">
+        <div id="about"  class="full-page-div">
             <h1 class="fade-in move-up"> Joshua Almario</h1>
 
             <!-- <h2 class="fade-in-slower"> Software/Game Developer</h2> -->
@@ -35,66 +35,275 @@
                 I am an EECS undergraduate, game developer, and educator at UC Berkeley. I work with interdisciplinary teams of all sizes and skillsets within projects of many different frameworks, exercising key skills of collaboration and adaptability.
             </p>
         </div>
-        <h1 id="projects"> Featured Projects </h1>
-        <div style="justify-content: center;">
-        <div class="game">
-            <div class="content-side">
-                <div class="game">
-                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
-                        <img src="halfwits_thumbnail.png" />
-                    </a>
-                    <div class="tag" style="background-color: blueviolet;">Godot</div>
-                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
-                    <div class="tag" style="background-color: blueviolet;">Developer </div>
-                </div>
-            </div>
-            <div class="text-side">
-                <div class="game-title"> Koal-Bolds </div> 
-                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> 
-                <div class="game-context"> GMTK Game Jam 2026</div> 
-                <div class="game-info"> testing <br>
-                    did one <br>
-                    did two
+        <h1 id="projects"> Projects </h1>
+        <div class="games">
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" href="https://cal-cs184-student.github.io/hw-webpages-veryspook/final-proj/final.html">
+                            <img src="smoke_thumbnail.png" />
+                        </a>
                     </div>
-            </div>
-        </div>
-
-        <div class="game">
-            <div class="content-side">
-                <div class="game fade-in-slowest">
-                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
-                        <img src="halfwits_thumbnail.png" />
-                    </a>
-                    <div class="tag" style="background-color: blueviolet;">Godot</div>
-                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
-                    <div class="tag" style="background-color: blueviolet;">Developer </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">3D</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Developer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Worst Birthday Party Simulator </div> 
+                    <div class="game-subtitle"> 3D Interactive Smoke Simulation</div> 
+                    <div class="game-context"> CS 184: Foundations of Computer Graphics</div> 
+                    <div class="game-info"> <br>
+                        - Extrapolated Jos Stam (2003)’s paper “Real-Time Fluid Dynamics for Games” into 3D, applying principles in fluid dynamics
+                        - Developed interactable smoke simulation framework within the HDRP rendering pipeline within the Unity engine <br>
+                        </div>
                 </div>
             </div>
-            <div class="text-side">
-                <div class="game-title"> Koal-Bolds </div> 
-                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> <br>
-                <div class="game-context"> GMTK Game Jam 2026</div> <br>
-            </div>
-        </div>
 
-        <div class="game" id:"home">
-            <div class="content-side">
-                <div class="game fade-in-slowest">
-                    <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
-                        <img src="halfwits_thumbnail.png" />
-                    </a>
-                    <div class="tag" style="background-color: blueviolet;">Godot</div>
-                    <div class="tag" style="background-color: blueviolet;">Game Jam </div>
-                    <div class="tag" style="background-color: blueviolet;">Developer </div>
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://cal-cs184-student.github.io/hw-webpages-veryspook/final-proj/final.html">
+                            <img src="spinout_thumbnail.jpg" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: green;">Research</div>
+                        <div class="tag" style="background-color: blueviolet;">Python</div>
+                        <div class="tag" style="background-color: blue;">Systems Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Spinout </div> 
+                    <div class="game-subtitle"> Interactive Web Puzzle</div> 
+                    <div class="game-context"> GamesCrafters Research Group</div> 
+                    <div class="game-info">
+                        - Encoded and computationally solved a puzzle using graph theory, encoding move-based analysis
+                        - Developed interactive GUI with audio support using backend API requests
+                        </div>
                 </div>
             </div>
-            <div class="text-side">
-                <div class="game-title"> Koal-Bolds </div> 
-                <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> <br>
-                <div class="game-context"> GMTK Game Jam 2026</div> <br>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://nyc.cs.berkeley.edu/uni/puzzles/spinout/variants/5_piece">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: green;">Research</div>
+                        <div class="tag" style="background-color: blueviolet;">Python</div>
+                        <div class="tag" style="background-color: blue;">Systems Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Structure of the DataDancer </div> 
+                    <div class="game-subtitle"> Crypt of the NecroDancer Teardown/Parody</div> 
+                    <div class="game-context">CS 61B: Data Structures</div> 
+                    <div class="game-info">
+                        - Developed procedural map generation using a chunk system and Prim's traversal algorithm    
+                        - Replicated rhythm system and combat mechanics faithful to Crypt of the NecroDancer
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- projects start -->
+
+
+        <h1 id="games"> Games </h1>
+        <div class="games">
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "squire_thumbnail.png" href="https://gamedevision.com/games/squire">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">3D</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Developer</div>
+                        <div class="tag" style="background-color: blue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Squire </div> 
+                    <div class="game-subtitle"> Asymmetrical Live-Action RPG w/ Alternate Controllers</div> 
+                    <!-- <div class="game-context"> GMTK Game Jam 2026</div>  -->
+                    <div class="game-info"> - Developed responsive UI systems and HUD, emphasizing disparity in information available between both players <br>
+                        - Ran playtest sessions at local events, including the Museum of Art and Digital Entertainment and Jacobs Hall  <br>
+                        </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: green;">Intern</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Systems Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Nexus Rush </div> 
+                    <div class="game-subtitle"> Roguelike Mobile Tower Defense</div> 
+                    <div class="game-context"> Beastwoe Games</div> 
+                    <div class="game-info">
+                        - Integrated internal progression systems to improve game replayability and player retention<br>
+                        - Designed and implemented UI screens for navigation and shop interfaces
+                        - Scheduled for release on the App Store
+                        </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: green;">Contracted</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Lead Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Torus </div> 
+                    <div class="game-subtitle"> Minimalist Mobile Tower Defense</div> 
+                    <!-- <div class="game-context"> GMTK Game Jam 2026</div>  -->
+                    <div class="game-info"> - Refactored AI-generated code from runtime-generated instantiation into engine assets, reorganized
+overall project structure <br>
+- Developed player combat systems and facilitated game design conversations to maximize player
+enjoyment <br>
+- Led prototype playtests to garner relevant, targeted feedback <br>
+                        </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">Game Jam</div>
+                        <div class="tag" style="background-color: blueviolet;">Godot</div>
+                        <div class="tag" style="background-color: blue;">Producer/Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Koal-bolds </div> 
+                    <div class="game-subtitle"> Fast-Paced Unit Management Clicker</div> 
+                    <div class="game-context"> GMTK Game Jam 2026</div> 
+                    <div class="game-info">
+                        - Managed scope and delegated tasks within 4-day time constraint<br>
+                        - Designed and implemented interconnected game systems and GUI <br>
+                        - Ranked #349/10,349 for artwork, #572/10,349 for creativity
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">Game Jam</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Systems Developer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Half-wits' Colosseum </div> 
+                    <div class="game-subtitle"> Spell-dividing Top-down Survival</div> 
+                    <div class="game-context"> Bear Jams Spring 2026</div> 
+                    <div class="game-info">
+                        - Developed modular spell-combining system for unique skill combinations and robust entity system for customizable enemy behaviors<br>
+                        - Connected backend systems into seamless, infinite gameplay loop <br>
+                        - Ranked #1/16 in GDD @ Berkeley's biannual game jam, nominated for best student game at Capital Creative Showcase 2026
+                    </div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">Game Jam</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Producer/Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI/Asset Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> Full Nest Syndrome </div> 
+                    <div class="game-subtitle"> Hectic Dorm Management Simulator</div> 
+                    <div class="game-context"> Bear Jams Spring 2024</div> 
+                    <div class="game-info">
+                        - Developed isometric grid movement system with dynamic rendering order
+                        - Implemented interactive tutorial and physics-based mechanics<br>
+                        - Produced additional art assets in line with artists' art styles to support more content and functionality 
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <div class="content-side">
+                    <div class="game">
+                        <a class="hover-link" data-static = "halfwits_thumbnail.png" data-hover = "halfwits_gameplay.gif" href="https://theonlycool1.itch.io/half-wits-colosseum">
+                            <img src="halfwits_thumbnail.png" />
+                        </a>
+                    </div>
+                    <div class="tags">
+                        <div class="tag" style="background-color: orangered;">Game Jam</div>
+                        <div class="tag" style="background-color: blueviolet;">Unity</div>
+                        <div class="tag" style="background-color: blue;">Developer</div>
+                        <div class="tag" style="background-color: darkblue;">UI Designer</div>
+                    </div>
+                </div>
+                <div class="text-side">
+                    <div class="game-title"> The White Knight: Last Cell Standing </div> 
+                    <div class="game-subtitle"> Cell-scaled Top-down Survival</div> 
+                    <div class="game-context"> GMTK Game Jam 2024</div> 
+                    <div class="game-info">
+                        - Developed modular spell-combining system for unique skill combinations and robust entity system for customizable enemy behaviors<br>
+                        - Connected backend systems into a seamless, infinite gameplay loop <br>
+                        - Ranked #1,384/7,518 overall
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-        <div id="footer"></div>
+       
+        <footer class="footer"> 
+            <p>&copy; 2026 Joshua Almario. All rights reserved. <br>
+                Contact me: jalmario1222@berkeley.edu
+            </p>
+        </footer>
     </body>
 </html>
