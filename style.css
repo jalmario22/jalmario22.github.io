@@ -44,7 +44,8 @@ html {
 
 footer {
 	background: #242424;
-	padding-bottom: 0%;
+	padding: 0.1%;
+	font-size: 30px;
 }
 
 .fade-in {
@@ -258,6 +259,23 @@ p {
 	text-align: center;
 	box-sizing: border-box;
 }
+
+a:visited {
+	color: grey
+}
+
+header a:visited {
+	color: white
+}
+
+a:visited {
+	color: grey
+}
+
+footer a {
+	color: grey
+}
+
 
 
 .static {
