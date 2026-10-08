@@ -260,17 +260,18 @@ p {
 	box-sizing: border-box;
 }
 
-a:visited {
+a:link {
 	color: grey
+}
+
+a:visited {
+	color: rgb(114, 114, 114)
 }
 
 header a:visited {
 	color: white
 }
 
-a:visited {
-	color: grey
-}
 
 footer a {
 	color: grey
